@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2024 Foodie's Delight. All Rights Reserved.</p>
+      <p>© 2024 Happy Tummy. All Rights Reserved.</p>
     </footer>
   );
 }

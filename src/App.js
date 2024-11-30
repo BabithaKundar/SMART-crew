@@ -6,11 +6,13 @@ import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import OrderPage from './pages/OrderPage';
 import CartPage from './pages/CartPage';
-import ContactPage from './pages/ContactPage';
+import ContactUsPage from './pages/ContactUsPage';
 import CategoryPage from './pages/CategoryPage';
 import AboutPage from './pages/AboutPage';
 import AuthPage from './pages/AuthPage';
+import ProfilePage from './pages/ProfilePage';
 import FeedbackPage from './pages/FeedbackPage';
+import SignupPage from './pages/SignupPage';
 import './App.css';
 
 function App() {
@@ -25,10 +27,12 @@ function App() {
             <Route path="/menu/:category" element={<CategoryPage />} />
             <Route path="/order" element={<OrderPage />} />
             <Route path="/cart" element={<CartPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/contact-us" element={<ContactUsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/auth" element={<AuthPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
             <Route path="/feedback" element={<FeedbackPage />} />
+            <Route path="/signup" element={<SignupPage />} />
           </Routes>
         </main>
         <Footer />
