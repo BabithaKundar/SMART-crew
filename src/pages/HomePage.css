@@ -1,0 +1,23 @@
+.homepage {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome {
+    margin-bottom: 20px;
+  }
+  
+  .view-menu-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .view-menu-link:hover {
+    background-color: #0056b3;
+  }
+  

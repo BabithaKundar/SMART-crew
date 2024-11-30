@@ -1,0 +1,18 @@
+.category-page {
+    padding: 20px;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .item-card {
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  

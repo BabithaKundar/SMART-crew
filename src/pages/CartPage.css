@@ -1,0 +1,35 @@
+.cart-page {
+    padding: 20px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .cart-item button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-item button:hover {
+    background-color: #d84315;
+  }
+  
