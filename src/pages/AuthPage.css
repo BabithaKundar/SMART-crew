@@ -1,43 +1,62 @@
-.auth-page {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .auth-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin: 20px auto;
-    max-width: 300px;
-  }
-  
-  .auth-form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .auth-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .auth-form button:hover {
-    background-color: #0056b3;
-  }
-  
-  .auth-page p {
-    color: #007bff;
-    cursor: pointer;
-  }
-  
-  .auth-page p:hover {
-    text-decoration: underline;
-  }
-  
+.team-section {
+  margin-top: 2rem;
+}
+
+.team-section h2 {
+  margin-bottom: 1rem;
+  color: #9c27b0;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  gap: 1.5rem;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 300px; /* Set a fixed height for the container */
+  padding-right: 1rem;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #9c27b0 #f0f0f0;
+ 
+}
+
+.team-container::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.team-container::-webkit-scrollbar-thumb {
+  background-color: #9c27b0;
+  border-radius: 10px;
+}
+
+.team-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.team-member {
+  flex: 0 0 auto;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  width: 500px;
+  margin: 0 auto; /* Center align the profiles */
+}
+
+.profile-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: hsl(291, 64%, 42%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.meet{
+  text-align: center;
+  color:#d5b9da
+}

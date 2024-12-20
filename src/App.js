@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { SearchProvider } from './context/SearchContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
+
 import OrderPage from './pages/OrderPage';
 import CartPage from './pages/CartPage';
 import ContactUsPage from './pages/ContactUsPage';
@@ -17,6 +19,7 @@ import './App.css';
 
 function App() {
   return (
+    <SearchProvider>
     <Router>
       <div className="app">
         <Navbar />
@@ -38,6 +41,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </SearchProvider>
   );
 }
 

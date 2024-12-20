@@ -1,37 +1,74 @@
-/* src/components/NavBar.css */
+/* src/components/Navbar.css */
 
+/* General Navbar Styling */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #130f0a;
   color: white;
 }
 
-.navbar-logo a {
-  color: white;
-  font-size: 2rem;
+.navbar-logo {
+  font-size: 1.8rem;
   font-weight: bold;
+  margin-right: 20px;
   text-decoration: none;
+  color: white;
+}
+
+.navbar-search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allows search bar to take up available space */
+  max-width: 600px;
+  margin-right: 10px;
+}
+
+.navbar-search input {
+  flex-grow: 1;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 1rem;
+  outline: none;
+  line-height: 1.2; /* Adjust this for alignment */
+}
+
+.navbar-search .search-icon {
+  background-color: #e07b00;
+  color: white;
+  border: none;
+  padding: 6.5px 15px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-left: 1px solid #ccc;
+  line-height:1.2;
+  margin-bottom: 14.5px;
+}
+
+
+.navbar-search .search-icon:hover {
+  background-color: #d06a00;
 }
 
 .navbar-links {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-links li {
   list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
 }
 
-.navbar-links a {
-  color: white;
+.navbar-links li a {
   text-decoration: none;
+  color: white;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  padding: 5px 10px;
 }
 
-.navbar-links a:hover {
-  color: #ff8c00;
+.navbar-links li a:hover {
+  text-decoration: underline;
 }

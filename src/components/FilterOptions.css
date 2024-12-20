@@ -1,0 +1,64 @@
+/* FilterOptions.css */
+.filter-container {
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+  
+  .filter-header:hover {
+    background-color: #c0c0c0;
+  }
+  
+  .filter-icon {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  
+  .filter-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 20px;
+  }
+  
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .filter-options label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .filter-options input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .filter-options label:hover {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-container {
+      width: 100%;
+    }
+  }
+  

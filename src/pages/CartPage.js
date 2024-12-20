@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import { CartContext } from '../context/CartContext';  // Correct path
-
+import { CartContext } from '../context/CartContext'; // Correct path
 import './CartPage.css';
 
 function CartPage() {
   const { cart, removeFromCart } = useContext(CartContext);
 
+  // Calculate total price based on totalPrice field of each item (which includes customization)
   const calculateTotal = () => {
-    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+    return cart.reduce((total, item) => total + item.totalPrice * item.quantity, 0);
   };
 
   return (
@@ -20,12 +20,12 @@ function CartPage() {
               <img src={item.img} alt={item.name} />
               <div>
                 <h3>{item.name}</h3>
-                <p>₹{item.price} x {item.quantity}</p>
+                <p>₹{item.totalPrice} x {item.quantity}</p> {/* Display updated price */}
                 <button onClick={() => removeFromCart(item.id)}>Remove</button>
               </div>
             </div>
           ))}
-          <h2>Total: ₹{calculateTotal()}</h2>
+          <h2>Total: ₹{calculateTotal()}</h2> {/* Display the total with updated prices */}
         </div>
       ) : (
         <p>Your cart is empty.</p>
