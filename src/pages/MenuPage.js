@@ -3,8 +3,9 @@ import { CartContext } from '../context/CartContext'; // Ensure this import is c
 import FilterOptions from '../components/FilterOptions';
 import './MenuPage.css';
 import { SearchContext } from '../context/SearchContext';
+import AdminPage from './AdminPage'; 
 
-function MenuPage() {
+function MenuPage({menuItems}) {
   const { addToCart } = useContext(CartContext);
   const { searchQuery } = useContext(SearchContext); // Get the search query
   // Categories with images and items
@@ -97,6 +98,8 @@ function MenuPage() {
   // Flatten all items for search functionality
   const allItems = categories.flatMap((category) => category.items);
   const searchedItems = searchItems(allItems);
+  
+  
   // Handle customization changes
   const handleCustomizationChange = (e) => {
     const { name, value } = e.target;
@@ -142,7 +145,7 @@ function MenuPage() {
       setCustomization({ quantity: 1, spicyLevel: 'Medium', specialNotes: '', size: 'Regular', extraIngredients: [] });
       setSelectedItem(null); // Close the customization panel
     }
-  };
+  }; 
 
   return (
     <div className="menu-page">

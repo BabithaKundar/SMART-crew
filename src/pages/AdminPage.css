@@ -1,0 +1,101 @@
+.admin-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it's centered vertically too */
+  }
+  
+  .admin-page .form-container {
+    width: 100%;
+    max-width: 500px;  /* Limiting the form width */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .admin-page h2,
+  .admin-page h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .admin-page input,
+  .admin-page textarea,
+  .admin-page select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Add margin between form elements */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; /* Ensure a comfortable font size */
+  }
+  
+  .admin-page input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.1);
+    margin-bottom:10px /* Slightly increase the size of the checkbox for better visibility */
+  }
+  
+  .admin-page button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Button takes full width */
+    margin-top: 15px;
+  }
+  
+  .admin-page button:hover {
+    background-color: #45a049;
+  }
+  
+  .admin-page .checkbox-group {
+    display:flex;
+    flex-direction: column; /* Stack checkboxes vertically */
+    gap: 10px;
+   
+  }
+  
+  .admin-page .checkbox-group label {
+    margin-top:0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add spacing between checkboxes */
+  }
+  
+  .admin-page select {
+    width: 100%;
+    font-size: 16px; /* Make select options a bit larger */
+  }
+  
+  .admin-page .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .admin-page .login-form input {
+    margin-bottom: 10px;
+  }
+  
+  .admin-page .login-form button {
+    width: 100%;
+  }
+  
+  .admin-page .login-error {
+    color: red;
+    text-align: center;
+  }
+  .label{
+    margin-top:0;
+    margin-block-end: 50px;
+  }

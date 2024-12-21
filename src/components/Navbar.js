@@ -42,6 +42,7 @@ const NavBar = () => {
         <li><Link to="/signup">Signup</Link></li>
         <li><Link to="/contact-us">Contact Us</Link></li>
         <li><Link to="/about">About</Link></li>
+        <li><Link to="/admin">Admin</Link></li>
       </ul>
     </nav>
   );
